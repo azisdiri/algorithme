@@ -6,11 +6,14 @@
 n = int(input('donner n : '))
 print(W())    
     '''
-def W(p,i):
-    if i>n:
-        return p
+
+
+def W(n):
+    if n == 0:
+        return 1
     else:
-        return W(p+2*(i+1),i+1)
-    
+        return W(n-1) + 2*(n+1)
+
+
 n = int(input('donner n : '))
-print(W(1,1))   
+print(W(n))
