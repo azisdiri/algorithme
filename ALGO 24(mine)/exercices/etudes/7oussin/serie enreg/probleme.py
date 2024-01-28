@@ -56,11 +56,17 @@ def meilleur_score(t, n):
             maxi = t[i]
     return maxi
 
-# def dist(t,n,x):
 
+def dist(t,n,x):
+    j = 0
+    while((j<=n)and(t[j]["numero"]!=x)):
+        j+=1
+    return j == n
+        
+    
 
 def creer():
-    global NT, n1
+    global n1
     n1 = 0
     maxi = meilleur_score(Foot, n)
     for i in range(n):
@@ -68,10 +74,18 @@ def creer():
             NT[i] == Foot[i]["numero"]
             n1 += 1
 
-
+def afficher():
+    f1 = open('abonnes.dat','rb')
+    for i in range(n1):
+        e = load(f1)
+        if e["numtel"] == NT[i]:
+            print(e["nom"]+" "+e["nom"])
+    
 # pp
 saisir()
 remplir()
 Foot = array([{}]*n)
 former()
+NT = array([str]*n)
 creer()
+afficher()
