@@ -5,7 +5,10 @@ def saisir():
     while not (n<=5000 and n>1):
         n = int(input('donner n : '))
    
-todo def valide():
+todo def valide(ch):
+    ch1=""
+    j=0
+    while ((ch[i] in ["A","F","I","P"])and(ch1.upper().find(ch[j]) != -1)):
     
    
 def remplir():
