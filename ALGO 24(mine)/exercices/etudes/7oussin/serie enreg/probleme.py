@@ -1,19 +1,23 @@
 from numpy import array
+from pickle import dump, load
 
 
 def saisir():
     global n
     n = int(input('donner n : '))
-    while not (n <= 5000 and n > 1):
+    while not (n <= 5000 and n >0):
         n = int(input('donner n : '))
 
 
 def valide(ch):
+    ch = ch.upper()
     ch1 = ""
-    j = 0
-    while ((ch[i].upper() in ["A", "F", "I", "P"]) and (ch1.find(ch[j].upper()) != -1)):
-        j += 1
+    j = 0    
+    while (j < len(ch)) and (ch[j] in ["A", "F", "I", "P"]) and (ch1.find(ch[j]) == -1):
         ch1 += ch[j]
+        j += 1  
+    return len(ch) == 4 and j == len(ch)
+
 
 
 def remplir():
@@ -44,22 +48,22 @@ def former():
     f = open('SMS.dat', 'rb')
     for i in range(n):
         e = load(f)
-        Foot["numero"] = e["tel"]
-        Foot["classement"] = e["sms"]
-        Foot["score"] = calcul_score(e["sms"])
+        Foot[i]["numero"] = e["tel"]
+        Foot[i]["classement"] = e["sms"]
+        Foot[i]["score"] = calcul_score(e["sms"])
 
 
 def meilleur_score(t, n):
-    maxi = t[0]
-    for i in range(n):
-        if t[i] > maxi:
-            maxi = t[i]
+    maxi = t[0]["score"]
+    for i in range(1,n):
+        if t[i]["score"] > maxi:
+            maxi = t[i]["score"]
     return maxi
 
 
 def dist(t,n,x):
     j = 0
-    while((j<=n)and(t[j]["numero"]!=x)):
+    while((j<n)and(t[j]!=x)):
         j+=1
     return j == n
         
@@ -71,7 +75,7 @@ def creer():
     maxi = meilleur_score(Foot, n)
     for i in range(n):
         if (Foot[i]["score"] == maxi) and dist(NT, n1, Foot[i]["numero"]):
-            NT[i] == Foot[i]["numero"]
+            NT[i] = Foot[i]["numero"]
             n1 += 1
 
 def afficher():
@@ -80,6 +84,7 @@ def afficher():
         e = load(f1)
         if e["numtel"] == NT[i]:
             print(e["nom"]+" "+e["nom"])
+    f1.close()
     
 # pp
 saisir()
