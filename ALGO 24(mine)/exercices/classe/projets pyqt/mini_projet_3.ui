@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>70</y>
+      <width>54</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>nombre 1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="a">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>70</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="liste">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>80</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>pgcd</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ppcm</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="res1">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>80</y>
+      <width>82</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>resultat</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>10</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>calcualtrice arithmetique</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>100</y>
+      <width>54</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>nombre 2</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="b">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>100</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label1">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>80</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(252, 255, 215);
+background-color: rgb(255, 239, 158);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>200</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>nombre premier</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>250</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>facteur premier</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nb_premier">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>200</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="facteurs_premiers">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>250</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="res2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>200</y>
+      <width>82</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>resultat</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>200</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(252, 255, 215);
+background-color: rgb(255, 239, 158);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="res3">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>250</y>
+      <width>82</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>resultat</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label3">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>250</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(252, 255, 215);
+background-color: rgb(255, 239, 158);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="annuler">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>390</y>
+      <width>82</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>reset</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quitter">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>390</y>
+      <width>82</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>exit</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
