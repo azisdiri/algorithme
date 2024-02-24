@@ -1,4 +1,4 @@
-from pickle import *
+0lfrom pickle import *
 
 def rech(f1,chn):
     f1 = open("Codes_braille.dat","rb")
