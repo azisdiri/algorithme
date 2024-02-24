@@ -1,4 +1,4 @@
-from pickle import *
+0lfrom pickle import *
 
 def rech(f1,chn):
     f1 = open("Codes_braille.dat","rb")
@@ -20,17 +20,16 @@ def convert(f1,phrase):
     
 
 def afficher():
-    global f1,f2
     f2 = open("Braille.txt","r")
-    f1 = open("Codes_braille.dat","rb")
-    ch1 = ""
+    mot = ""
     ch = f2.readline()
     while ch!='':
-        ch1 = ch1+convert(f1,ch)
+        for i in range(0,len(ch),6):
+            mot+=equivalent(f1,ch[i:i+6])
         ch = f2.readline()
+        res+=mot+" "
     f1.close()
-    f2.close()
-    print(ch1)
+    print(res[:len(ch)-1])
 
 #PP
 afficher()
