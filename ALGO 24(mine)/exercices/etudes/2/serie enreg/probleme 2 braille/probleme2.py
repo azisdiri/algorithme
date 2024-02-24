@@ -22,14 +22,14 @@ def convert(f1,phrase):
 def afficher():
     global f1,f2
     f2 = open("Braille.txt","r")
-    f1 = open("Codes_braille.dat","rb")
-    ch1 = ""
+    mot = ""
     ch = f2.readline()
     while ch!='':
-        ch1 = ch1+convert(f1,ch)
+        for i in range(0,len(ch)):            mot+=equivalent(f1,ch)
         ch = f2.readline()
+        res+=mot+" "
+    print(res[:len(ch)-1]
     f1.close()
-    f2.close()
     print(ch1)
 
 #PP
