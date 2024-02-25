@@ -9,7 +9,8 @@ def dist(t,n,x):
     j = 0
     while (j<=n-1) and (t[j]!=x):
         j += 1
-    return j == n    
+    return j == n
+
 def remplir():
     global f1
     f1 = open('Depart.dat','wb')
@@ -46,6 +47,7 @@ def generer():
         dump(e,f2)
     f1.close()
     f2.close()
+    
 def rech_min(f2):
     f2=open("Suite.dat","rb")
     e=load(f2)
