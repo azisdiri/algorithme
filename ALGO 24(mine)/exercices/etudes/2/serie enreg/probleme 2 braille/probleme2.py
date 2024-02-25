@@ -24,12 +24,11 @@ def afficher():
     mot = ""
     ch = f2.readline()
     while ch!='':
-        for i in range(0,len(ch),6):
-            mot+=equivalent(f1,ch[i:i+6])
+        ch1 = ch1+convert(f1,ch)
         ch = f2.readline()
-        res+=mot+" "
     f1.close()
-    print(res[:len(ch)-1])
+    f2.close()
+    print(ch1)
 
 #PP
 afficher()
