@@ -34,7 +34,12 @@ def remplir():
         d+=1
     t[2]=d-1
         
-      
+def puiss(x):
+    for i in range(1,p+1):
+        x=x*i
+    return x
+
+
 def rsa(chn):
     e=t[0]
     n=t[1]
@@ -42,7 +47,21 @@ def rsa(chn):
     ch=""
     for i in range(len(chn)):
         ch+=ord(ch[i])
-    while (len(ch)%(len(str(n)-1)))
+    while (len(ch)%(len(str(n))-1))!=0:
+        ch="0"+ch
+    res=""
+    while ch!="":
+        ch1=ch[:len(str(n))]
+        ch=ch[len(str(n)):]
+        while len(str(puiss(int(ch1),e)))%n!=(len(str(n))-1):
+            ch1=str(puiss(int(ch1),e)%n)
+        res+=ch1
+    res1=""
+    while res!="":
+        res1+=chr(res[:3])
+        res=res[3:]
+    return res1
+
         
 #pp
 from random import randint
