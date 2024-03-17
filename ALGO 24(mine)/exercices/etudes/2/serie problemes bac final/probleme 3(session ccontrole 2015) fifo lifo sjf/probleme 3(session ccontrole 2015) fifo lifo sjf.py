@@ -1,6 +1,5 @@
-#fesd l fichier sal7o wela mat5admouch makench ya3ml fichier texte taille mte3o yzid automatiquement 
-f
-rom pickle import *
+#ce fichier contient une boucle infinie 
+from pickle import *
 
 from numpy import array
 
