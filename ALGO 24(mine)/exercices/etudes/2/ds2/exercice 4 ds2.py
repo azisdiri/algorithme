@@ -62,9 +62,22 @@ def rsa(chn):
         res=res[3:]
     return res1
 
+def crypter():
+    global f2
+    f1=open("message.txt","r")
+    f2=open("mess_crypt","w")
+    eof=False 
+    while not  eof:
+        try :
+            ch=f1.readline()
+            remplir()
+            ch1=rsa(ch)
+            f2.write(ch1+"\n")
+        except :
+            eof
+
         
 #pp
 from random import randint
 from numpy import array
-remplir()
-print(t)
+crypter()
