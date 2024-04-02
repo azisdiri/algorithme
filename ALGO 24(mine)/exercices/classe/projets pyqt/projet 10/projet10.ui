@@ -278,6 +278,31 @@
       <height>311</height>
      </rect>
     </property>
+    <column>
+     <property name="text">
+      <string>identifiant</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>nom prenom</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>genre</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ville</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>score</string>
+     </property>
+    </column>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
